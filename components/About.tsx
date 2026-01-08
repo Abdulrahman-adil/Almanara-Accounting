@@ -1,21 +1,20 @@
-import React from 'react';
-import { useLanguage } from '../contexts/LanguageContext';
-import { CheckCircle2 } from 'lucide-react';
+import React from 'react'
+import { useLanguage } from '../contexts/LanguageContext'
+import { CheckCircle2 } from 'lucide-react'
 
 const About: React.FC = () => {
-  const { t } = useLanguage();
+  const { t } = useLanguage()
 
   return (
     <section id="about" className="py-20 bg-slate-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          
           {/* Image Side */}
           <div className="relative order-2 lg:order-1">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-              <img 
-                src="https://picsum.photos/seed/office_team/600/500" 
-                alt="Our Team" 
+              <img
+                src="/img/hero.jpg"
+                alt="Our Team"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -32,7 +31,7 @@ const About: React.FC = () => {
             <p className="text-lg text-slate-600 mb-8 leading-relaxed">
               {t.about.content}
             </p>
-            
+
             <div className="grid sm:grid-cols-2 gap-4">
               {t.about.values.map((value, idx) => (
                 <div key={idx} className="flex items-center gap-3">
@@ -42,11 +41,10 @@ const About: React.FC = () => {
               ))}
             </div>
           </div>
-
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default About;
+export default About
