@@ -1,7 +1,7 @@
 import React from 'react'
 import { useLanguage } from '../contexts/LanguageContext'
 import { CheckCircle2 } from 'lucide-react'
-
+import about from '../img/about.jpg'
 const About: React.FC = () => {
   const { t } = useLanguage()
 
@@ -13,7 +13,7 @@ const About: React.FC = () => {
           <div className="relative order-2 lg:order-1">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="/img/hero.jpg"
+                src={about}
                 alt="Our Team"
                 className="w-full h-full object-cover"
               />

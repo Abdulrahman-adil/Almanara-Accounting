@@ -2,7 +2,7 @@ import React from 'react'
 import { useLanguage } from '../contexts/LanguageContext'
 import { CONTACT_INFO } from '../constants'
 import { MessageCircle } from 'lucide-react'
-
+import HeroIMg from '../img/hero.jpg'
 const Hero: React.FC = () => {
   const { t } = useLanguage()
 
@@ -48,7 +48,7 @@ const Hero: React.FC = () => {
             <div className="absolute -inset-4 bg-brand-200/30 rounded-full blur-3xl"></div>
             <div className="relative bg-white p-2 rounded-2xl shadow-xl transform rotate-2 hover:rotate-0 transition-transform duration-500">
               <img
-                src="img/pexels-karola-g-4476375.jpg"
+                src={HeroIMg}
                 alt="Accounting and Finance"
                 className="rounded-xl w-full object-cover h-[400px]"
               />
